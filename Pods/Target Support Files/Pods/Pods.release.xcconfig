@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/IRKit" "${PODS_ROOT}/Headers/Public/ISHTTPOperation" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/TMCache"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/BlocksKit" -isystem "${PODS_ROOT}/Headers/Public/IRKit" -isystem "${PODS_ROOT}/Headers/Public/ISHTTPOperation" -isystem "${PODS_ROOT}/Headers/Public/Reachability" -isystem "${PODS_ROOT}/Headers/Public/TMCache"
+OTHER_LDFLAGS = -ObjC -l"Pods-BlocksKit" -l"Pods-IRKit" -l"Pods-ISHTTPOperation" -l"Pods-Reachability" -l"Pods-TMCache" -l"c++" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "MediaPlayer" -framework "MessageUI" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
